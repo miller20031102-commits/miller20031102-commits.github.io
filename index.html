@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1812453017075470"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免費 BMI 計算器｜理想體重、TDEE、每日飲水量計算</title>
+<meta name="description" content="免費 BMI 計算器，快速計算 BMI、理想體重、每日飲水量與 TDEE 熱量需求。">
+
+<meta name="keywords" content="BMI計算器,BMI計算機,TDEE計算,理想體重,熱量計算,減脂計算">
+
+<meta name="author" content="Miller">
+
+<meta property="og:title" content="免費 BMI 計算器">
+<meta property="og:description" content="快速計算 BMI、理想體重、每日飲水量與 TDEE 熱量需求。">
+<meta property="og:url" content="https://miller20031102-commits.github.io/bmi-calculator/">
+<meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>⚖️ BMI 計算器</h1>
+
+
+<meta name="robots" content="index, follow">
+    <p>輸入身高與體重</p>
+
+    <input type="number" id="height" placeholder="身高 (cm)">
+    <input type="number" id="weight" placeholder="體重 (kg)">
+<label>性別</label>
+
+<select id="gender">
+    <option value="male">男生</option>
+    <option value="female">女生</option>
+</select>
+
+<label>年齡</label>
+
+<input type="number"
+id="age"
+placeholder="年齡">
+
+<label>活動量</label>
+
+<select id="activity">
+    <option value="1.2">久坐（幾乎不運動）</option>
+    <option value="1.375">輕度運動（每週1-3天）</option>
+    <option value="1.55">中度運動（每週3-5天）</option>
+    <option value="1.725">高度運動（每週6-7天）</option>
+    <option value="1.9">運動員等級</option>
+</select>
+<label>目標體重 (kg)</label>
+<input type="number" id="targetWeight" placeholder="例如：60">
+
+<label>每週預計減重</label>
+<select id="weeklyLoss">
+    <option value="0.25">每週 0.25 kg</option>
+    <option value="0.5" selected>每週 0.5 kg</option>
+    <option value="0.75">每週 0.75 kg</option>
+    <option value="1">每週 1 kg</option>
+</select>
+    <button onclick="calculateBMI()">
+        計算 BMI
+    </button>
+
+    <div id="result"></div>
+<div class="ad-container">
+    Google AdSense 廣告位置
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
